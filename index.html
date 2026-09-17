@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land Area Access — Jamaica to Rosedale (LIRR Far Rockaway Branch)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
+<link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="comparison-container" class="map-wrap">
+  <div id="before" class="map"></div>
+  <div id="after" class="map"></div>
+</div>
+
+<div class="map-loading" id="mapLoading">Loading data&hellip;</div>
+
+<!-- per-side labels -->
+<div class="side-label side-label-left">Land Area Access — Full Service</div>
+<div class="side-label side-label-right">Land Area Access — $3 Fare (Limited)</div>
+
+<!-- legend -->
+<div class="legend-panel" id="legend">
+  <!-- populated by js/app.js -->
+</div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
